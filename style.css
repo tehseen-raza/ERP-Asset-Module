@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* font-family: 'poppins' sans-serif;
+   font-family: 'Roboto', sans-serif; */
+#scan-me {
+    margin-top: 20em;
+}
+.nav-list {
+    padding-top: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500px;
+    background-color: #0082dc;
+    height: 100vh;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+.navbar {
+    margin-left: -15px
+}
+@media only screen and(max-width: 1200px) {}
+
+/* Serach Box */
+
+.search-box {
+    position: absolute; /* Change absolute to relative for center(Horizontally) to page */
+    margin-left: 2%;
+    width: 350px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    left: 500px;
+    border: 1px solid #D1D1D1;
+}
+#search-icon {
+    font-size: 10px;
+    color: #fff;
+}
+#top-search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.nav {
+    margin-left: -15px;
+}
+.admin-txt {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1.5em;
+    margin-bottom: -5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.hr-txt {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.txt {
+    margin-left: 20%;
+}
+#bell-icon {
+    margin-top: 35px;
+}
+.admin-img {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+}
+.nav li a:hover {
+    color: #fff;
+}
+
+/* Add Asset Button & Breadcrumbs */
+
+.asset-btn {
+    background: #0082DC;
+    border-radius: 40px;
+    color: white;
+    font-size: 14px !important;
+    margin-left: 40%;
+    font-family: 'poppins' sans-serif;
+    font-size: 14px;
+}
+.btn-icon {
+    width: 20px;
+}
+.breadcrumbs-txt {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+/* ------------------------------------------ */
+
+/* Asset Counter */
+
+.assets-counter {
+    margin-top: 30px !important;
+}
+.line-1,
+.line-3 {
+    width: 5px;
+    height: 45px;
+    background: #F6821F;
+    border-radius: 3px;
+    margin-top: -10px;
+}
+.line-2,
+.line-4 {
+    width: 5px;
+    height: 45px;
+    background: #0082dc;
+    border-radius: 3px;
+    margin-top: -10px;
+}
+.txt-1,
+.txt-3 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #F6821F;
+    margin-top: -15px;
+    margin-bottom: 0;
+}
+.txt-2,
+.txt-4 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #0082dc;
+    margin-top: -15px;
+    margin-bottom: 0;
+}
+.txt-11,
+.txt-33 {
+    font-size: 14px;
+    line-height: 23px;
+    color: #ABABAB;
+}
+.txt-22,
+.txt-44 {
+    font-size: 14px;
+    line-height: 23px;
+    color: #ABABAB;
+}
+.txt-contain {
+    margin-left: 20px;
+}
+.img-contain {
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    margin-left: 15%;
+    margin-top: -15px;
+}
+.img-contain-1,
+.img-contain-3 {
+    background: #FEF1E6;
+}
+.img-contain-2,
+.img-contain-4 {
+    background: #E3F1FB;
+}
+.first-box,
+.second-box,
+.third-box {
+    width: 20px;
+}
+.fourth-box {
+    width: 100%;
+}
+
+/* ------------------------------------------- */
+
+/* -------Assets Graph/Images------- */
+
+/* Styled-List Marker */
+#first-item::marker {
+    color: #0082dc;
+}
+#second-item::marker {
+    color: #F6821F;
+}
+#third-item::marker {
+    color: #BC0070;
+}
+#fourth-item::marker {
+    color: #FDAF17;
+}
+#fifth-item::marker {
+    color: #ED1B24;
+}
+.asset-overview-txt {
+    margin-left: 15px;
+    font-family: 'poppins' sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.list-styled {
+    margin-top: 25px !important;
+    font-size: 16;
+    font-weight: 500;
+}
+.row-content {
+    margin-top: -10px;
+}
+.left-row {
+    margin-left: 5px;
+    box-shadow: 4px 4px 4px rgba(244, 244, 244, 0.25), -4px -4px 17.9879px rgba(241, 241, 241, 0.25);
+    border-radius: 10px;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+
+/* List Section */
+.box-1 {
+    padding-top: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    /* padding-bottom: 5px; */
+}
+
+/* Right Row  */
+.buy-dispose-txt {
+    padding-top: 22px;
+    margin-left: 10px;
+    font-family: 'poppins' sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.right-row {
+    box-shadow: 4px 4px 4px rgba(244, 244, 244, 0.25), -4px -4px 17.9879px rgba(241, 241, 241, 0.25);
+    border-radius: 10px;
+    padding-right: 20px;
+    width: 100%;
+    height: 100%;
+}
+.Graph-Img {
+    width: 50%;
+}
+
+/* Dropdown Buttons */
+#dropdownMenuBtn {
+    background-color: #FEF1E6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #F6821F;
+    border-radius: 16px;
+    padding: 6px 14px;
+}
+#dropdownMenuBtnYearly {
+    background-color: #E3F1FB;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #0082DC;
+    border-radius: 16px;
+    padding: 6px 14px;
+}
+.category:active {
+    background-color: #FEF1E6;
+    color: #F6821F;
+}
+.category.active {
+    background-color: #FEF1E6;
+    color: #F6821F;
+}
+.yearly:active {
+    background-color: #E3F1FB;
+    color: #0082DC;
+}
+.yearly.active {
+    background-color: #E3F1FB;
+    color: #0082DC;
+}
+/* ---------------------------------------- */
+
+/* Assest / See All Assets  */
+
+.assets {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+.see-all-btn {
+    background-color: #E3F1FB !important;
+    border-radius: 26px !important;
+    font-size: 16px !important;
+    color: #0082DC !important;
+}
+.see-all-btn:hover {
+    background-color: #b1dfff !important;
+}
+/* ---------------------------------------- */
+
+/* All Asset Lists */
+.asset-image {
+    width: 50px;
+    height: 50px;
+}
+.asset-txt {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.asset-txt-1 {
+    font-family: 'poppins' , sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.asset-txt-2 {
+    font-family: 'poppins' , sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0082DC;
+    margin-top: -15px !important;
+}
+/* .contain-1 {
+    margin-top: -10px;
+} */
+.line-grey {
+    width: 1px;
+    height: 30px;
+    background: #C4C4C4;
+}
+.qr-code-img {
+    width: 25px;
+    height: 25px;
+}
+.kebab-btn {
+    color: #C4C4C4;
+}
+.asset-list-row {
+    align-items: center !important;
+    border-radius: 108px;
+    box-shadow: 4px 4px 4px rgba(244, 244, 244, 0.25), -4px -4px 17.9879px rgba(241, 241, 241, 0.25);
+}
+.asset-name {
+    color: #F6821F;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600;1,900&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Asset Module (S1)</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!--Side Navbar-->
+            <div class="col-2 nav-list">
+                <nav class="navbar navbar-expand-xl navbar-light">
+                    <div class="container-fluid" id="toggleBtn">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo3" aria-controls="navbarTogglerDemo3"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse show" id="navbarTogglerDemo3">
+                            <ul class="nav">
+                                <li class="nav-item mt-5">
+                                    <a class="nav-link" href="#"><img src="Media/e.png" class="me-3"
+                                            alt="icon-1">Assets</a>
+                                </li>
+                                <li class="nav-item mt-2">
+                                    <a class="nav-link" href="#"><img src="Media/Classification.png" class="me-3"
+                                            alt="icon-2">Asset Classification</a>
+                                </li>
+                                <li class="nav-item mt-2">
+                                    <a class="nav-link" href="#"><img src="Media/Type.png" class="me-3"
+                                            alt="icon-3">Assets Type</a>
+                                </li>
+                                <li class="nav-item mt-2">
+                                    <a class="nav-link" href="#"><img src="Media/Vector.png" class="me-3"
+                                            alt="icon-4">Asset Category</a>
+                                </li>
+                                <li class="nav-item mt-2">
+                                    <a class="nav-link" href="#"><img src="Media/Dispose.png" class="me-3"
+                                            alt="icon-5">Dispose Asset</a>
+                                </li>
+                                <li class="nav-item" id="scan-me">
+                                    <a class="nav-link" href="#"><img src="Media/scan.png" class="me-3"
+                                            alt="icon-6">Scan Asset</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!--Major Content -->
+
+            <div class="col-10">
+                <!--Row Start / Major Content-->
+                <div class="row">
+                    <div class="col-8">
+                        <div class="box search-box mt-3">
+                            <input type="text" name="search" placeholder="Search..." id="top-search-input">
+                            <img src="./Media/Group.png" id="search-icon" alt="search-icon">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex justify-content-evenly">
+                            <a href="#"><img class="img-fluid" id="bell-icon" src="Media/Bell.png" alt="bell-icon"></a>
+                            <div class="txt">
+                                <p class="admin-txt">Admin Name</p>
+                                <p class="hr-txt">HR Department</p>
+                            </div>
+                            <img class="admin-img" src="Media/Mask Group.png" alt="profile-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- Breadcrumbs/Asset Btn-->
+                <div class="row justify-content-between align-items-center mt-2">
+                    <div class="col-4">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item breadcrumbs-txt"><a href="#">Dashboard</a></li>
+                                <li class="breadcrumb-item active breadcrumbs-txt" aria-current="page">Assets/</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn asset-btn text-light text-center px-3 py-1">
+                            <span class="btn-text">Add Asset</span>
+                            <span class="text-center"><img src="./Media/e.png" alt="" class="btn-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Asset Counters  -->
+
+                <div class="row justify-content-between assets-counter">
+
+                    <!-- Asset Box-1 -->
+                    <div class="col-3 d-flex contain-1">
+                        <div class="line-1"></div>
+                        <div class="txt-contain">
+                            <p class="txt-1">322</p>
+                            <p class="txt-11">Total Asset</p>
+                        </div>
+                        <div class="img-contain-1 img-contain">
+                            <img class="img-fluid first-box" src="./Media/Group1.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Asset Box-2  -->
+                    <div class="col-3 d-flex contain-2">
+                        <div class="line-2"></div>
+                        <div class="txt-contain">
+                            <p class="txt-2">$355,000</p>
+                            <p class="txt-22">Asset Values</p>
+                        </div>
+                        <div class="img-contain-2 img-contain">
+                            <img class="img-fluid second-box" src="./Media/Value.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Asset Box-3  -->
+                    <div class="col-3 d-flex contain-3">
+                        <div class="line-3"></div>
+                        <div class="txt-contain">
+                            <p class="txt-3">4,355</p>
+                            <p class="txt-33">Disposed Assets</p>
+                        </div>
+                        <div class="img-contain-3 img-contain">
+                            <img class="img-fluid third-box" src="./Media/Dispose2.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Asset Box-4 -->
+                    <div class="col-3 d-flex contain-4">
+                        <div class="line-4"></div>
+                        <div class="txt-contain">
+                            <p class="txt-4">4,355</p>
+                            <p class="txt-44">Assets Come In<br>
+                                Last Month</p>
+                        </div>
+                        <div class="img-contain-4 img-contain">
+                            <img class="img-fluid fourth-box" src="./Media/Group 63.png" alt="">
+                        </div>
+                    </div>
+                    <!-- Asset Boxes-End  -->
+                </div>
+                <!-- ---------------- -->
+
+                <!-- Assets Graphs/Images -->
+                <div class="row row-content">
+                    <!-- Left Row -->
+                    <div class="col w-100">
+                        <div class="row d-flex align-items-center justify-content-between left-row">
+                            <div class="col-5 box-1 styled-list">
+                                <h6 class="asset-overview-txt">Assets Overview</h6>
+                                <ul class="list-styled">
+                                    <li id="first-item">Electronic</li>
+                                    <li id="second-item">Furniture</li>
+                                    <li id="third-item">Accessories</li>
+                                    <li id="fourth-item">Sanitary</li>
+                                    <li id="fifth-item">Vehicles</li>
+                                </ul>
+                            </div>
+                            <div class="col-5">
+                                <img class="img-fluid graph-img" src="media/image (3).png" alt="Graph">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Row  -->
+                    <div class="col w-100">
+                        <div class="row right-row">
+                            <div class="col-6">
+                                <h6 class="buy-dispose-txt">Buy And Dispose Assets</h6>
+                            </div>
+                            <div class="col-6 d-flex mt-3">
+                                <div class="dropdown ms-4">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuBtn"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Category
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item active category" href="#">Category 1</a></li>
+                                        <li><a class="dropdown-item category" href="#">Category 2</a></li>
+                                        <li><a class="dropdown-item category" href="#">Category 3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown ms-2">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuBtnYearly"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Yearly
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item active yearly" href="#">2021</a></li>
+                                        <li><a class="dropdown-item yearly" href="#">2020</a></li>
+                                        <li><a class="dropdown-item yearly" href="#">2019</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <img class="img-fluid Graph-Img" src="media/graph.png" alt="graph-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Asset List/ See All Assets -->
+                <div class="row mt-3">
+                    <div class="col-12 d-flex justify-content-between align-items-center ">
+                        <div class="col-6">
+                            <p class="assets">Assets</p>
+                        </div>
+                        <div class="btn see-all-btn px-4 py-1 me-4 text-center">See All</div>
+                    </div>
+                </div>
+
+                <!-- All Assets List -->
+                <div class="row me-2 asset-list-row">
+                    <div class="col-2 d-flex">
+                        <img class="img-fluid asset-image" src="./Media/Mask Group(2).png" alt="asset-image">
+                        <p class="asset-txt mt-3">Asset Name</p>
+                    </div>
+                    <div class="col-2 d-flex justify-content-between">
+                        <div class="contain-1 ms-4">
+                            <p class="asset-txt-1 mt-3">Asset Name</p>
+                            <p class="asset-txt-2 mt-3">Asset Name</p>
+                        </div>
+                        <div class="line-grey mt-4"></div>
+                    </div>
+                    <div class="col-2 d-flex justify-content-between">
+                        <div class="contain-1 ms-4">
+                            <p class="asset-txt-1 mt-3">Category</p>
+                            <p class="asset-txt-2 mt-3">Category Here</p>
+                        </div>
+                        <div class="line-grey mt-4"></div>
+                    </div>
+                    <div class="col-2 d-flex justify-content-between">
+                        <div class="contain-1 ms-4">
+                            <p class="asset-txt-1 mt-3">Asset ID</p>
+                            <p class="asset-txt-2 mt-3">FR-000012</p>
+                        </div>
+                        <div class="line-grey mt-4"></div>
+                    </div>
+                    <div class="col-3 qr-code-container d-flex ">
+                        <div class="contain-1 ms-4">
+                            <p class="asset-txt-1 mt-3">Asset Price</p>
+                            <p class="asset-txt-2 mt-3">$22.001</p>
+                        </div>
+                        <div class="img-fluid">
+                            <img class="img-fluid ms-5 mt-4 qr-code-img" src="Media/qr-code.png" alt="qr-code">
+                        </div>
+                    </div>
+                    <div class="col-1 ">
+                        <a href="#"><svg width="5" height="20" viewBox="0 0 7 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.5" cy="3.5" r="3.5" fill="#C4C4C4" />
+                                <circle cx="3.5" cy="16.5" r="3.5" fill="#C4C4C4" />
+                                <circle cx="3.5" cy="29.5" r="3.5" fill="#C4C4C4" />
+                            </svg></a>
+                    </div>
+                </div>
+
+
+                <div class="row me-2 asset-list-row">
+                    <div class="col-2 d-flex">
+                        <img class="img-fluid asset-image" src="./Media/Mask Group(2).png" alt="asset-image">
+                        <p class="asset-txt mt-3">Asset Name</p>
+                    </div>
+                    <div class="col-2 d-flex justify-content-between">
+                        <div class="contain-1 ms-4">
+                            <p class="asset-txt-1 mt-3">Asset Name</p>
+                            <p class="asset-txt-2 asset-name mt-3">Asset Name</p>
+                        </div>
+                        <div class="line-grey mt-4"></div>
+                    </div>
+                    <div class="col-2 d-flex justify-content-between">
+                        <div class="contain-1 ms-4">
+                            <p class="asset-txt-1 mt-3">Category</p>
+                            <p class="asset-txt-2 asset-name mt-3">Category Here</p>
+                        </div>
+                        <div class="line-grey mt-4"></div>
+                    </div>
+                    <div class="col-2 d-flex justify-content-between">
+                        <div class="contain-1 ms-4">
+                            <p class="asset-txt-1 mt-3">Asset ID</p>
+                            <p class="asset-txt-2 asset-name mt-3">FR-000012</p>
+                        </div>
+                        <div class="line-grey mt-4"></div>
+                    </div>
+                    <div class="col-3 qr-code-container d-flex ">
+                        <div class="contain-1 ms-4">
+                            <p class="asset-txt-1 mt-3">Asset Price</p>
+                            <p class="asset-txt-2 asset-name mt-3">$22.001</p>
+                        </div>
+                        <div class="img-fluid">
+                            <img class="img-fluid ms-5 mt-4 qr-code-img" src="Media/qr-code.png" alt="qr-code">
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <a href="#"><svg width="5" height="20" viewBox="0 0 7 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.5" cy="3.5" r="3.5" fill="#C4C4C4" />
+                                <circle cx="3.5" cy="16.5" r="3.5" fill="#C4C4C4" />
+                                <circle cx="3.5" cy="29.5" r="3.5" fill="#C4C4C4" />
+                            </svg></a>
+                    </div>
+                </div>
+
+                <!----------------------------------------------->
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
