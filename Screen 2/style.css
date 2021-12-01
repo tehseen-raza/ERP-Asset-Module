@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* font-family: 'poppins' sans-serif;
+   font-family: 'Roboto', sans-serif; */
+.nav-list {
+    padding-top: 3%;
+    background-color: #0082dc;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+/* ----- Scrollbar ----- */
+::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 50%;
+}
+::-webkit-scrollbar-track {
+    background: #bbbbbb;
+    border-radius: 50%;
+
+}
+::-webkit-scrollbar-thumb {
+    background: #F6821F;
+    border-radius: 10px;
+}
+
+/* Filter (Serach By Price) */
+#asset_SFilter-txt {
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+}
+.asset_SFilter-label {
+    font-size: 12px;
+}
+
+/* Custome Slider */
+.form-control-range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 144px;
+    height: 1.5px;
+    outline: none;
+    background-color: #ddd;
+}
+.form-control-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1.5px solid #F6821F;
+    width: 11px;
+    height: 11px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.form-control-range::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+.form-control-range::-webkit-slider-thumb:active {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+                /* Media Queries */
+
+/* @media only screen and(max-width: 480px) {
+    .nav-list {
+        background-color: #fff;
+    }
+} */
+
+
+.asset_right-content {
+    overflow-y: scroll;
+    padding-left: 5%;
+}
+/* Serach Box */
+
+.search-box {
+    position: absolute; /* Change absolute to relative for center(Horizontally) to page */
+    margin-left: 2%;
+    width: 350px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    left: 500px;
+    border: 1px solid #D1D1D1;
+}
+#search-icon {
+    font-size: 10px;
+    color: #fff;
+}
+#top-search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+/* Profile Section */
+.admin-txt {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1.5em;
+    margin-bottom: -5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.hr-txt {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.txt {
+    margin-left: 20%;
+}
+#bell-icon {
+    margin-top: 35px;
+}
+.admin-img {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+/* Add Asset Button & Breadcrumbs */
+
+.asset-btn {
+    background: #0082DC;
+    border-radius: 40px;
+    color: white;
+    font-size: 14px !important;
+    margin-left: 40%;
+    font-family: 'poppins' sans-serif;
+    font-size: 14px;
+}
+.btn-icon {
+    width: 20px;
+}
+.breadcrumbs-txt {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+/* ------------------------------------------ */
+
+
+/* Assest / See All Assets  */
+
+.assets {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+/* All Asset Lists */
+.asset-image {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+.asset-txt {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.asset-txt-1 {
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.asset-txt-2 {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0082DC;
+    margin-top: -15px !important;
+}
+.line-grey {
+    width: 1px;
+    height: 30px;
+    background: #C4C4C4;
+}
+.qr-code-img {
+    width: 25px;
+    height: 25px;
+}
+.kebab-btn {
+    color: #C4C4C4;
+}
+.asset-list-row {
+    align-items: center !important;
+    border-radius: 108px;
+    box-shadow: 4px 4px 4px rgba(244, 244, 244, 0.25), -4px -4px 17.9879px rgba(241, 241, 241, 0.25);
+}
+.asset-name {
+    font-family: 'poppins', sans-serif;
+    color: #F6821F;
+}
