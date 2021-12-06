@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
+/* font-family: 'poppins' sans-serif;
+   font-family: 'Roboto', sans-serif; */
+#scan-me {
+    margin-top: 20em;
+}
+.nav-list {
+    padding-top: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500px;
+    background-color: #0082dc;
+    height: 100vh;
+}
+.sidebar-links {
+    color: #ffffff;
+}
+.navbar {
+    margin-left: -15px
+}
+@media only screen and(max-width: 1200px) {}
+
+/* Serach Box */
+
+.search-box {
+    position: absolute; /* Change absolute to relative for center(Horizontally) to page */
+    margin-left: 2%;
+    width: 350px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    left: 500px;
+    border: 1px solid #D1D1D1;
+}
+#search-icon {
+    font-size: 10px;
+    color: #fff;
+}
+#top-search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.nav {
+    margin-left: -15px;
+}
+.admin-txt {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1.5em;
+    margin-bottom: -5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.hr-txt {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.txt {
+    margin-left: 20%;
+}
+#bell-icon {
+    margin-top: 35px;
+}
+.admin-img {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+}
+.nav li a:hover {
+    color: #fff;
+}
+
+/* Add Asset Button & Breadcrumbs */
+
+.asset-btn {
+    background: #0082DC;
+    border-radius: 40px;
+    color: white;
+    font-size: 14px !important;
+    margin-left: 40%;
+    font-family: 'poppins' sans-serif;
+    font-size: 14px;
+}
+.btn-icon {
+    width: 20px;
+}
+.breadcrumbs-txt {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+/* ------------------------------------------ */
+
+/* Add Asset Details  */
+.asset_details {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+/* Asset Detail Form */
+.asset_detail_form label,
+.asset_details_textArea label {
+    font-family: 'poppins', sans-serif;
+    color: #0082dc;
+    font-size: 16px;
+    text-align: justify;
+    margin-left: 20px;
+}
+.asset_detail_form input:focus,
+.asset_details_textArea textarea:focus {
+    box-shadow: none !important;
+}
+.asset_detail_form input {
+    border-radius: 10px !important;
+}
+/* Asset Category Field */
+.formSelect:focus {
+    box-shadow: none;
+}
+.formSelect,
+.asset_details_textArea textarea {
+    border-radius: 10px;
+}
+.formSelect:optional {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px !important;
+    color: #7D7D7D;
+}
+/* --------------------- */
+
+.asset_detail_form ::placeholder,
+.asset_details_textArea ::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px !important;
+    color: #7D7D7D;
+}
+
+/* --------------------- */
+
+/* Asset Image Upload Field */
+.add_assetImg_txt1 {
+    margin-left: 33px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    color: #0082DC;
+}
+.add_assetImg_txt2 {
+    margin-left: 33px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #7D7D7D;
+}
+.asset_imgUpload {
+    background: #E3F1FB;
+}
+.asset_imgUpload_outerDiv {
+    background-color: #fff;
+    border: 1px solid #0082DC;
+    border-radius: 5px;
+    margin-right: 60px !important;
+}
+.asset_submit_btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: #0082DC;
+    border-radius: 20px;
+}
+.asset_submit_col {
+    align-self: center;
+}
+/* ----------------------- */
+
+/* Checkboxes for warranty card  */
+.asset_checkboxes {
+    margin-left: 32px;
+}
+.asset_checkboxes label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #0082DC;
+}
