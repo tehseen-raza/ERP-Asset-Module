@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600;1,900&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- ----------------------------------------------- -->
+
+    <title>Asset Module (S1)</title>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!--Side Navbar-->
+            <div class="col-2 nav-list">
+                <nav class="navbar navbar-expand-xl navbar-light">
+                    <div class="container-fluid" id="toggleBtn">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo3" aria-controls="navbarTogglerDemo3"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse show" id="navbarTogglerDemo3">
+                            <ul class="nav">
+                                <li class="nav-item mt-5">
+                                    <a class="nav-link sidebar-links active" href="#"><img src="Media/e.png"
+                                            class="me-3" alt="icon-1">Assets</a>
+                                </li>
+                                <li class="nav-item mt-2">
+                                    <a class="nav-link sidebar-links" href="#"><img src="Media/Classification.png"
+                                            class="me-3" alt="icon-2">Asset Classification</a>
+                                </li>
+                                <li class="nav-item mt-2">
+                                    <a class="nav-link sidebar-links" href="#"><img src="Media/Type.png" class="me-3"
+                                            alt="icon-3">Assets Type</a>
+                                </li>
+                                <li class="nav-item mt-2">
+                                    <a class="nav-link sidebar-links" href="#"><img src="Media/Vector.png" class="me-3"
+                                            alt="icon-4">Asset Category</a>
+                                </li>
+                                <li class="nav-item mt-2">
+                                    <a class="nav-link sidebar-links" href="#"><img src="Media/Dispose.png" class="me-3"
+                                            alt="icon-5">Dispose Asset</a>
+                                </li>
+                                <li class="nav-item" id="scan-me">
+                                    <a class="nav-link sidebar-links" href="#"><img src="Media/scan.png" class="me-3"
+                                            alt="icon-6">Scan Asset</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!--Major Content -->
+
+            <div class="col-10">
+                <!--Row Start / Major Content-->
+                <div class="row">
+                    <div class="col-8">
+                        <div class="box search-box mt-3">
+                            <input type="text" name="search" placeholder="Search..." id="top-search-input">
+                            <img src="./Media/Group.png" id="search-icon" alt="search-icon">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex justify-content-evenly">
+                            <a href="#"><img class="img-fluid" id="bell-icon" src="Media/Bell.png" alt="bell-icon"></a>
+                            <div class="txt">
+                                <p class="admin-txt">Admin Name</p>
+                                <p class="hr-txt">HR Department</p>
+                            </div>
+                            <img class="admin-img" src="Media/Mask Group.png" alt="profile-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- Breadcrumbs/Asset Btn-->
+                <div class="row justify-content-between align-items-center mt-2">
+                    <div class="col-4">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item breadcrumbs-txt"><a href="#">Dashboard</a></li>
+                                <li class="breadcrumb-item active breadcrumbs-txt" aria-current="page">Assets</li>
+                                <li class="breadcrumb-item active breadcrumbs-txt" aria-current="page">Add Assets</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn asset-btn shadow-none text-light text-center px-3 py-2">
+                            <span class="btn-text">Add Asset</span>
+                            <span class="text-center"><img src="./Media/e.png" alt="" class="btn-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Add Asset Details  -->
+                <div class="container">
+                    <div class="row mt-5">
+                        <div class="col">
+                            <p class="ms-4 asset_details">Asset Details :</p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2 px-3">
+                        <div class="col-6 pe-5 form-group asset_detail_form">
+                            <label for="Asset Name">Asset Name</label>
+                            <input type="text" class="form-control py-2" id="asset_name_txt"
+                                placeholder="Type Asset Name Here">
+                            <label class="mt-3" for="Select Category">Asset Category</label>
+                            <select class="form-select formSelect py-2">
+                                <option selected="">Select Category</option>
+                                <option value="1">Category 1</option>
+                                <option value="2">Category 2</option>
+                                <option value="3">Category 3</option>
+                            </select>
+                            <a href="#">
+                                <p style="color: #F6821F; text-decoration: underline !important; margin-bottom: -15px;"
+                                    class="d-flex justify-content-end" id="add_new_category ">Add New Category</p>
+                            </a>
+                            <label class="mt-2" for="Asset Price">Asset Price</label>
+                            <input type="text" class="form-control py-2" id="asset_price_txt"
+                                placeholder="Asset Price Here">
+                            <div class="d-flex justify-content-between mt-3">
+                                <div class="">
+                                    <label for="Purchase Date">Purchase Date</label>
+                                    <input type="text" class="form-control py-2" id="asset_PurchaseDate_txt"
+                                        placeholder="Purchase Date">
+                                </div>
+                                <div class="">
+                                    <label for="Install Date">Install Date</label>
+                                    <input type="text" class="form-control py-2" id="asset_installDate_txt"
+                                        placeholder="Install Date">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 pe-5 form-group asset_detail_form">
+                            <label for="Asset Classification">Asset Classification</label>
+                            <input type="text" class="form-control py-2" id="asset_classification_txt"
+                                placeholder="Asset Classification Here">
+                            <label class="mt-3" for="Asset Type">Asset Type</label>
+                            <input type="text" class="form-control py-2" id="asset_type_txt"
+                                placeholder="Asset Type Here">
+                            <label class="mt-3" for="Warranty Code">Warranty Code</label>
+                            <input type="text" class="form-control py-2" id="asset_warrantyCode_txt"
+                                placeholder="Asset Warranty Code Here">
+                            <label class="mt-3" for="Install By">Install By</label>
+                            <input type="text" class="form-control py-2" id="asset_installBy_txt"
+                                placeholder="Asset Install By">
+                        </div>
+                    </div>
+
+                    <!-- Asset Details TextArea -->
+                    <div class="row">
+                        <div class="col mt-3 mx-3 me-5">
+                            <div class="form-group asset_details_textArea">
+                                <label for="details textarea">Details</label>
+                                <textarea class="form-control pt-3" id="asset_detail_textera"
+                                    placeholder="Type Asset Detail Here" rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------>
+
+                    <!-- Asset Image Upload Field -->
+                    <div class="row mt-4">
+                        <div class="col">
+                            <p class="mb-0 add_assetImg_txt1">
+                                Add Asset Image
+                            </p>
+                            <p class="mb-0 add_assetImg_txt2">
+                                Click on plus button to add images
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col mt-3 p-1 mx-4 me-5 asset_imgUpload_outerDiv">
+                            <div class="container d-flex justify-content-center asset_imgUpload">
+                                <label for="imageUpload" class="btn p-4">
+                                    <svg width="22" height="25" viewBox="0 0 26 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.1709 14.4348H15.0321V24.7164H10.9861V14.4348H0.89491V10.7696H10.9861V0.440396H15.0321V10.7696H25.1709V14.4348Z"
+                                            fill="#0082DC" />
+                                    </svg>
+                                </label>
+                                <input type="file" id="imageUpload" accept="image/*" style="display: none">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------------- -->
+
+                    <div class="row mt-5 mb-5">
+                        <div class="col">
+                            <p class="mb-0 add_assetImg_txt1">
+                                Warranty
+                            </p>
+                            <p class="mb-0 add_assetImg_txt2">
+                                Click on plus button to add images
+                            </p>
+                            <div class="asset_checkboxes mt-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox1" value="Yes" checked
+                                        aria-checked="true">
+                                    <label class="form-check-label" for="Checkbox1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox2" value="No"
+                                        aria-checked="false">
+                                    <label class="form-check-label" for="Checkbox2">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col asset_submit_col d-flex flex-row-reverse">
+                            <button class="shadow-none btn text-white asset_submit_btn me-5 px-5 py-2">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!----------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <!-- JQuery Check/Uncheck for boxes-->
+    <script>$("input:checkbox").click(function () {
+            $('input:checkbox').not(this).prop('checked', '');
+        });
+    </script>
+    <!-- ----------------------------------------------- -->
+</body>
+
+</html>
