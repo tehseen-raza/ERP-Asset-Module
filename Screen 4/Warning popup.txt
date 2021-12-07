@@ -1,0 +1,63 @@
+<<<--------------------HTML-------------------->>>
+<div class="modal fade" id="show_warning" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content pt-4 justify-content-center assetDelete_warning d-flex">
+                                        <h5 class="modal-title mt-3 px-4" id="assetWarning_heading">Are You Sure?
+                                        </h5>
+                                        <p class="assetWarning_txt px-4">Agreeing to this action would mean deletion of
+                                            the data. Click on the primary button to complete the action.</p>
+
+                                        <!--Cancel/Done Button-->
+                                        <div class="modal-body d-flex justify-content-end">
+                                            <button class="btn shadow-none asset_delete_cancel px-4"
+                                                data-bs-dismiss="modal">Cancel
+                                            </button>
+                                            <button class="btn asset_delete_done px-4">Done
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+________________________________________________
+
+		<<<----------------CSS------------------->>>
+/* Asset Dispose/Delete Modal/Popup */
+
+.assetWarning_heading {
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #323232;
+}
+.assetWarning_txt {
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    color: #7D7D7D;
+}
+.asset_delete_done {
+    background: #DC0D00;
+    font-weight: 500;
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    color: #fff;
+}
+.asset_delete_done:hover {
+    background: #fff;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+    border: 1px solid #DC0D00;
+    box-shadow: none;
+    color: #DC0D00;
+}
+.asset_delete_cancel {
+    font-weight: 500;
+    color: #0082DC;
+}
+.assetDelete_warning {
+    width: 420px;
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+}
+
+/* ------------------------------------------- */
+
